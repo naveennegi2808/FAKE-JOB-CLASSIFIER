@@ -82,7 +82,8 @@ if st.button("🔍 Predict Fraud Probability"):
         final_input = hstack([X_text, cat_features_scaled])
 
         # Predict
-        prob = model.predict_proba(final_input)[0][1]
+       # In your prediction section, modify this line:
+        prob = min(model.predict_proba(final_input)[0][1] * 100, 100.0)  # Cap at 100%
         label = model.predict(final_input)[0]
 
         # Output box with gradient-friendly colors
