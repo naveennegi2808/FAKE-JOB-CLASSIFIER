@@ -93,7 +93,6 @@ if st.button("🔍 Predict Fraud Probability"):
         st.markdown(f"""
         <div style='background: linear-gradient(to right, #434343, #000000); padding:20px; border-radius:12px;'>
             <h4 style='color:#FFFFFF;'>Prediction Result</h4>
-            <p style='color:#FFFFFF;'><strong>Fraud Probability:</strong> <span style='color:{result_color};'>{prob:.2%}</span></p>
             <p style='color:#FFFFFF;'><strong>Prediction:</strong> <span style='color:{result_color};'>{result_text}</span></p>
         </div>
         """, unsafe_allow_html=True)
