@@ -6,6 +6,4 @@ matplotlib==3.9.4
 seaborn==0.13.2
 joblib==1.5.1
 imbalanced-learn==0.12.2
-PyYAML==6.0.2
-altair==5.5.0
-scipy==1.11.4
+
