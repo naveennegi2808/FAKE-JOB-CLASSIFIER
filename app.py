@@ -83,7 +83,7 @@ if st.button("🔍 Predict Fraud Probability"):
 
         # Predict
        # In your prediction section, modify this line:
-        prob = min(model.predict_proba(final_input)[0][1] * 100, 100.0)  # Cap at 100%
+        prob = min(model.predict_proba(final_input)[0][1] , 100.0)  # Cap at 100%
         label = model.predict(final_input)[0]
 
         # Output box with gradient-friendly colors
